@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chittved</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <header>
+    <h1>Chittved</h1>
+    <p>Re-live your relief</p>
+</header>
+      <main>
+        <div class="card w-full">
+          <div class="card-content p-6">
+            <div class="tabs space-y-6">
+              <div class="tabs-list w-full justify-start overflow-x-auto">
+                <button class="tabs-trigger" data-value="services">Our Services</button>
+                <button class="tabs-trigger" data-value="appointment">Book Appointment</button>
+                <button class="tabs-trigger" data-value="internship">Internship</button>
+                <button class="tabs-trigger" data-value="volunteer">Volunteer</button>
+                <button class="tabs-trigger" data-value="payment">Payment</button>
+              </div>
+
+              <div class="tabs-content" data-value="services">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <!-- Service 1 -->
+                  <div class="card overflow-hidden">
+                    <div class="card-header pb-4">
+                      <div class="flex items-center space-x-4">
+                        <div class="bg-primary p-3 rounded-full">
+                          <!-- Replace with appropriate icon -->
+                          <svg class="w-6 h-6 text-primary-foreground"></svg>
+                        </div>
+                        <h2 class="card-title text-lg">Individual Therapy</h2>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <p class="card-description">One-on-one sessions tailored to your needs.</p>
+                    </div>
+                    <div class="card-footer">
+                      <button class="button w-full">Learn More</button>
+                    </div>
+                  </div>
+                  <!-- Service 2 -->
+                  <div class="card overflow-hidden">
+                    <div class="card-header pb-4">
+                      <div class="flex items-center space-x-4">
+                        <div class="bg-primary p-3 rounded-full">
+                          <!-- Replace with appropriate icon -->
+                          <svg class="w-6 h-6 text-primary-foreground"></svg>
+                        </div>
+                        <h2 class="card-title text-lg">Group Therapy</h2>
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <p class="card-description">Supportive environment with peers facing similar challenges.</p>
+                    </div>
+                    <div class="card-footer">
+                      <button class="button w-full">Learn More</button>
+                    </div>
+                  </div>
+                  <!-- Add more services as needed -->
+                </div>
+              </div>
+
+              <div class="tabs-content" data-value="appointment">
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="card-title">Book an Appointment</h2>
+                    <p class="card-description">Schedule your session with our professionals</p>
+                  </div>
+                  <div class="card-content">
+                    <form class="space-y-4">
+                      <div>
+                        <label for="service">Service</label>
+                        <select id="service" class="w-full p-2 border rounded">
+                          <!-- Options for services -->
+                          <option value="individual-therapy">Individual Therapy</option>
+                          <option value="group-therapy">Group Therapy</option>
+                          <!-- Add more options as needed -->
+                        </select>
+                      </div>
+                      <div>
+                        <label for="appointment-date">Select Date</label>
+                        <input type="date" id="appointment-date" class="w-full p-2 border rounded">
+                      </div>
+                      <div>
+                        <label for="appointment-time">Select Time</label>
+                        <input type="time" id="appointment-time" class="w-full p-2 border rounded" required>
+                      </div>
+                      <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="w-full p-2 border rounded" required>
+                      </div>
+                      <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="w-full p-2 border rounded" required>
+                      </div>
+                      <button type="submit" class="button">Book Appointment</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tabs-content" data-value="internship">
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="card-title">Apply for Internship</h2>
+                    <p class="card-description">Join our team and gain valuable experience</p>
+                  </div>
+                  <div class="card-content">
+                    <form class="space-y-4">
+                      <div>
+                        <label for="intern-name">Name</label>
+                        <input type="text" id="intern-name" class="w-full p-2 border rounded" required>
+                      </div>
+                      <div>
+                        <label for="intern-email">Email</label>
+                        <input type="email" id="intern-email" class="w-full p-2 border rounded" required>
+                      </div>
+                      <div>
+                        <label for="intern-message">Message</label>
+                        <textarea id="intern-message" class="w-full p-2 border rounded" placeholder="Tell us about yourself and why you're interested in interning with us" required></textarea>
+                      </div>
+                      <button type="submit" class="button">Submit Application</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tabs-content" data-value="volunteer">
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="card-title">Volunteer Opportunities</h2>
+                    <p class="card-description">Make a difference in your community</p>
+                  </div>
+                  <div class="card-content">
+                    <form class="space-y-4">
+                      <div>
+                        <label for="volunteer-name">Name</label>
+                        <input type="text" id="volunteer-name" class="w-full p-2 border rounded" required>
+                      </div>
+                      <div>
+                        <label for="volunteer-email">Email</label>
+                        <input type="email" id="volunteer-email" class="w-full p-2 border rounded" required>
+                      </div>
+                      <div>
+                        <label for="volunteer-message">Message</label>
+                        <textarea id="volunteer-message" class="w-full p-2 border rounded" placeholder="Tell us about your interests and availability" required></textarea>
+                      </div>
+                      <button type="submit" class="button">Submit Application</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tabs-content" data-value="payment">
+                <div class="card">
+                  <div class="card-header">
+                    <h2 class="card-title">Online Payment</h2>
+                    <p class="card-description">Securely process your payment</p>
+                  </div>
+                  <div class="card-content">
+                    <form class="space-y-4">
+                      <div>
+                        <label for="payment-amount">Amount</label>
+                        <input type="number" id="payment-amount" class="w-full p-2 border rounded" min="0" step="0.01" required>
+                      </div>
+                      <button type="submit" class="button">Process Payment</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="mt-12 text-center text-gray-600">
+        <p>&copy; 2023 Mental Health Services. All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

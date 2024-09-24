@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7fafc;
+  color: #00008b; /* Set the font color to dark blue */
+}
+
+.header, .footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #0F1754; /* Heading color set to dark blue */
+}
+
+.header p {
+  font-size: 1.2em;
+  color: #00008b; /* Paragraph color set to dark blue */
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  color: #00008b; /* Card text color set to dark blue */
+}
+
+.card-header, .card-footer {
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: #00008b; /* Card title color set to dark blue */
+}
+
+.card-description {
+  color: #00008b; /* Card description color set to dark blue */
+}
+
+.tabs-list {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs-trigger {
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tabs-trigger.active {
+  background: #0056b3;
+}
+
+.tabs-content {
+  display: none;
+}
+
+.tabs-content.active {
+  display: block;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #00008b; /* Input text color set to dark blue */
+}
+
+label {
+  font-weight: bold;
+  color: #00008b; /* Label color set to dark blue */
+}
+
+.logo {
+  width: 150px; /* Adjust the width as needed */
+  margin-bottom: 20px; /* Add some margin below the logo */
+}
+
+.logo-container {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-width: 300px; /* Adjust this value as needed */
+    height: auto;
+}
